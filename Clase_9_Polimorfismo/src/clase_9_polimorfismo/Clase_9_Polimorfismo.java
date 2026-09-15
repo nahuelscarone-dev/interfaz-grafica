@@ -18,7 +18,7 @@ public class Clase_9_Polimorfismo {
      */
     public static void main(String[] args) {
         
-         clsLibroFisico libroF1 = new clsLibroFisico("El Señor de los Anillos", "Tolkien", 20000, 1500, 5);
+        clsLibroFisico libroF1 = new clsLibroFisico("El Señor de los Anillos", "Tolkien", 20000, 1500, 5);
         clsLibroDigital libroD1 = new clsLibroDigital ("El Señor de los Anillos", "Tolkien", 23424, "8MBs");
         clsLibroUsado libroU1 = new clsLibroUsado ("Winnie The Pooh", "Christhopher Robin", 42421, "Deteriorado");
         clsLibroDeColeccion libroC1 = new clsLibroDeColeccion ("Harry Potter", "J.K. Rowling", 642, 47212);
@@ -69,7 +69,7 @@ public class Clase_9_Polimorfismo {
            //Pattern Matching. En una sola línea Java verifica si el libro es promocionable, y si da true, hace el downcast.
            // Este libro firmó el contrato Promocionable?
                if(libro instanceof Promocionable lp)
-           {
+           { 
                
                System.out.println("Motivo de descuento: " + lp.getMotivoPromocion());
                System.out.println("Precio con promo: " + lp.precioConPromocion(libro.calcularPrecioFinal()));
